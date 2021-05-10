@@ -72,7 +72,7 @@ namespace Emu {
           frame.load(news_items[id].html, "");
         } else {
           frame.load("", "");
-          view.fetch_resource(news_items[id].link+"?preview=1", {Referer: "https://renegade-x.com/forums/forum/7-news/", X-Requested-With: "XMLHttpRequest", TE: "Trailers", Pragma: "no-cache"}, load_news_item, {id: id, frame: frame});
+          view.fetch_resource(news_items[id].link+"?preview=1", {Referer: "https://ren-x.com/forums/forum/7-news/", X-Requested-With: "XMLHttpRequest", TE: "Trailers", Pragma: "no-cache"}, load_news_item, {id: id, frame: frame});
         }
       }
     }
@@ -85,7 +85,7 @@ namespace Emu {
         frame.load(news_items[0].html, "");
       } else {
         frame.load("", "");
-        view.fetch_resource(news_items[id].link+"?preview=1", {Referer: "https://renegade-x.com/forums/forum/7-news/", X-Requested-With: "XMLHttpRequest", TE: "Trailers", Pragma: "no-cache"}, load_news_item, {id: id, frame: frame});
+        view.fetch_resource(news_items[id].link+"?preview=1", {Referer: "https://ren-x.com/forums/forum/7-news/", X-Requested-With: "XMLHttpRequest", TE: "Trailers", Pragma: "no-cache"}, load_news_item, {id: id, frame: frame});
       }
     }
   }
