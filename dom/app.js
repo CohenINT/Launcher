@@ -220,7 +220,8 @@ class App extends Element {
   ["on keydown"](evt, target) {
     if (evt.code == "KeyF5") {
       console.log(window.location);
-      Window.this.load(window.location.href);
+      //Window.this.load(window.location);
+     
     }
   }
 }
